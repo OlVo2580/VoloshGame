@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants vs Zombies Clone</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #87CEEB;
+        }
+        canvas {
+            border: 2px solid black;
+            background-color: #f0e68c;
+        }
+        .panel {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 800px;
+        }
+        .plant-option {
+            border: 2px solid black;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <div class="plant-option" id="sunflower">🌻 Sunflower (50)</div>
+        <div class="plant-option" id="shooter">🔫 Shooter (100)</div>
+        <div class="plant-option" id="tank">🛡️ Tank (150)</div>
+    </div>
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+    <script src="game.js"></script>
+</body>
+</html>
